@@ -1,4 +1,4 @@
-// Лабораторна роборта №3, Варіант №8
+// Лабораторна роборта №4, Варіант №8
 /// <reference types="node" />
 import * as fs from "fs";
 import * as readline from "readline";
