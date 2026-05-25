@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import * as readline from "readline";
 
 interface Searchable {

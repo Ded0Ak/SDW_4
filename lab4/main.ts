@@ -26,14 +26,13 @@ async function main() {
 
   try {
     const data = fs.readFileSync(inputPath, "utf8");
-    console.log("Файл прочитано, обробка...");
 
     const lines = data.split(/\r?\n/);
     const outLines = lines.map(transformLine);
 
     fs.writeFileSync(outputPath, outLines.join("\n"), "utf8");
 
-    console.log("Готово. Результат записано у файл:", outputPath);
+    console.log("Результат записано у файл:", outputPath);
   } catch (err: any) {
     console.error("Помилка:", err.message);
   } finally {
